@@ -53,7 +53,7 @@ object MaterializingStreams extends App {
   val wordFlow: Flow[String, Int, NotUsed] = Flow[String].fold(0)((current, sentences) => current + sentences.split(" ").length)
 
   wordSource.via(wordFlow).toMat(Sink.head)(Keep.right).run()
-  
+
   val wordGraph: Future[Int] = wordSource.toMat(wordSink)(Keep.right).run()
 
   wordGraph.onComplete{
