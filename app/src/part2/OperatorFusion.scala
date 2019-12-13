@@ -1,10 +1,8 @@
-package src.playground
+package src.part2
 
 import akka.actor.{Actor, ActorSystem, Props}
 import akka.stream.ActorMaterializer
 import akka.stream.scaladsl.{Flow, Sink, Source}
-
-import scala.sys.Prop
 
 object OperatorFusion extends App {
 

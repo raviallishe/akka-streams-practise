@@ -1,8 +1,8 @@
-package src.playground
+package src.part2
 
 import akka.actor.ActorSystem
-import akka.stream.{ActorMaterializer, OverflowStrategy}
 import akka.stream.scaladsl.{Flow, Sink, Source}
+import akka.stream.{ActorMaterializer, OverflowStrategy}
 
 object BackPressureBasics extends App {
 
