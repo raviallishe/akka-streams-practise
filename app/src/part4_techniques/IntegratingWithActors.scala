@@ -7,7 +7,7 @@ import akka.util.Timeout
 
 object IntegratingWithActors extends App {
 
-  implicit val system = ActorSystem("OperatorFusion")
+  implicit val system = ActorSystem("IntegratingWithActors")
   implicit val materializer = ActorMaterializer()
 
   class SimpleActor extends Actor {

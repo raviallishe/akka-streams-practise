@@ -7,7 +7,7 @@ import akka.stream.scaladsl.{Broadcast, Flow, GraphDSL, RunnableGraph, Sink, Sou
 
 object GraphBasics extends App {
 
-  implicit val system = ActorSystem("OperatorFusion")
+  implicit val system = ActorSystem("GraphBasics")
   implicit val materializer = ActorMaterializer()
 
   val input = Source(1 to 100)
